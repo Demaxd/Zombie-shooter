@@ -19,10 +19,12 @@ public class Zombie : MonoBehaviour
     private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        _navMeshAgent.updateRotation = false;
     }
 
     private void Update()
     {
         _navMeshAgent.SetDestination(_player.transform.position);
+        transform.rotation = Quaternion.LookRotation(_navMeshAgent.velocity.normalized);
     }
 }

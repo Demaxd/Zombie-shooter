@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5219384374322879940}
   - component: {fileID: 5219384374322879943}
   - component: {fileID: 5219384374322879942}
+  - component: {fileID: 44263112}
   m_Layer: 0
   m_Name: ZOMBIE
   m_TagString: Untagged
@@ -68,6 +69,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawner: {fileID: 0}
+--- !u!114 &44263112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5219384374322879941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c06d2f6130f6ca4786b8bde39cbb5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5219384373027600411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,6 +136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TT_demo_zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 660b8f006dd644e4e8d4d83d904f3f2d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14953694d54eea4eb66f453e525024c, type: 3}
 --- !u!4 &4867749912295527669 stripped
